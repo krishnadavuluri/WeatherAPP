@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <link type="stylesheet" src="bootstap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+      <div class="row ">
+          <div class="col-sm-12 col-md-6 col-lg-6" style="border-bottom: 1px solid white;">
+               <div class="jumbotron jumbotron-fluid text-design" style="background-color:white;margin-top:5px;">
+                <center><div class="col-sm-12 col-md-12 col-lg-12 testing-border"><p style="font-size: 20px;color: tomato; font-weight: 800; visibility: hidden;" id="current-error">Opps Invalid Input! Try Again </p></div></center>
+                  <center style="margin-top:10px;"><span style="font-size: 20px;font-weight: 800;">Your Location:</span><span id="city-name" style="font-size: 25px;font-weight: 800;"> --</span></center>
+                  <center><img src="img/buffuring.gif" width="250px" height="200px" alt="" id="image" style="margin-top: 20px;"></center>
+                  <center style="margin-top: 20px;"><span class="display-2" id="temp" >--</span><span  class="display-4">&#176c</span></center>
+                  <center style="margin-top: 19px;"><h1 class="display-5" id="report" >--</h1></center>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6" style="border-left: 1px solid white;border-bottom: 1px solid white;">
+                <div class="jumbotron jumbotron-fluid text-design" style="background-color:white;margin-top:5px;">
+                  <center><div class="col-sm-12 col-md-12 col-lg-12 testing-border"><p style="font-size: 20px;color: tomato; font-weight: 800; visibility:hidden;" id="search-error" >Opps Invalid City! Try Again </p></div></center>
+                   <center><div class="col-sm-12 col-md-12 col-lg-12 testing-border"><p style="font-size: 25px; font-weight: 800;" >Find current weather of city</p></div></center>
+                   <center><div class="col-sm-6 col-lg-8 testing-border"><input class="form-control" id="getPlaceName" type="text" placeholder="Enter City Name"></div></center>
+                   <center><div class="col-sm-3 col-md-6 col-lg-6 testing-border" style="margin-top: 10px;"><button class="btn btn-primary" onclick="GetReport()">Search</button></center>
+                   <center style="margin-top: 20px;"><span id="search-name" style="font-size: 25px; visibility:hidden;">PlaceName</span></center>
+                   <center><img src="" width="100px" style="visibility: hidden;" height="100px" alt="" id="search-image"></center>
+                   <center><span class="display-2" style="visibility: hidden;" id="search-temp">--</span><span id="search-unit" style="visibility: hidden;" class="display-4" >&#176c</span></center>
+                   <center><h1 class="display-5" style="visibility: hidden;" id="search-report">--</h1></center>
+                </div>
+          </div>
+      </div>
+     <center><p style="color: white;font-weight: 800;margin-top: 10px;">Created By Krishna Kumar</p></center> 
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
