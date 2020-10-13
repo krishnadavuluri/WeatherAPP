@@ -81,7 +81,7 @@ function GetReport()
         PlaceName.style.visibility="visible";
         Temperature.innerHTML=Math.floor(temp-273);
         //second change.
-        
+        //this change.
         unit.style.visibility="visible";
         Temperature.style.visibility="visible";
         //this is new commit.
