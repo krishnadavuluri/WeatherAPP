@@ -82,6 +82,7 @@ function GetReport()
         Temperature.innerHTML=Math.floor(temp-273);
         unit.style.visibility="visible";
         Temperature.style.visibility="visible";
+        //this is new commit.
         Description.innerHTML=description;
         Description.style.visibility="visible";
         Image.style.visibility="visible";
